@@ -1,0 +1,43 @@
+/** @format */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(
+        -45deg,
+        #ff9a9e,
+        #fad0c4,
+        #fad0c4,
+        #a18cd1,
+        #fbc2eb,
+        #ff9a9e
+    );
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+nav {
+    margin: 32px 0;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 8px;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
